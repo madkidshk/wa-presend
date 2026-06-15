@@ -1,0 +1,4 @@
+*.key
+*.phone
+.DS_Store
+__pycache__/
