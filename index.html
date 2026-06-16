@@ -146,6 +146,7 @@ a{color:#4f46e5}code{background:#eef0f3;padding:1px 6px;border-radius:6px;font-s
 const OWNER="madkidshk", REPO="wa-presend", API=`https://api.github.com/repos/${OWNER}/${REPO}/contents`;
 const $=s=>document.querySelector(s);
 let token=localStorage.getItem("idealab_pat")||"", freq="none";
+(function(){var m=(location.hash||"").match(/[#&]t=([^&]+)/);if(m){try{token=decodeURIComponent(m[1]);localStorage.setItem("idealab_pat",token);}catch(e){}}})();
 const UNIT={daily:"日",weekly:"週",monthly:"月",yearly:"年"};
 
 function toast(t){const e=$("#toast");e.textContent=t;e.classList.add("show");setTimeout(()=>e.classList.remove("show"),2600);}
